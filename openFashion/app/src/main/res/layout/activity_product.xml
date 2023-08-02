@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProductActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/product_pic"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:src="@drawable/black_t_shirt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/slider_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardBackgroundColor="@color/black"
+            android:layout_marginTop="350dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/slider_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/white_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginBottom="-30dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/frame_slider" />
+
+                <TextView
+                    android:id="@+id/womens_fashon_wear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Womens Fashion Wear"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/white_layout" />
+
+                <TextView
+                    android:id="@+id/heading"
+                    style="@style/Bold_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Yellow_shirt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/womens_fashon_wear" />
+
+                <TextView
+                    android:id="@+id/products_price"
+                    style="@style/title_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Price"
+                    app:layout_constraintStart_toStartOf="@id/heading"
+                    app:layout_constraintTop_toBottomOf="@id/heading" />
+
+                <TextView
+                    style="@style/title_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Amount"
+                    android:id="@+id/Amount"
+                    app:layout_constraintStart_toEndOf="@+id/products_price"
+                    app:layout_constraintTop_toBottomOf="@id/heading" />
+
+                <TextView
+                    android:id="@+id/content_of_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/product_message"
+                    app:layout_constraintStart_toStartOf="@id/products_price"
+
+                    app:layout_constraintTop_toBottomOf="@id/products_price" />
+
+                <TextView
+                    android:id="@+id/selectsize"
+                    style="@style/title_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Select_size"
+                    app:layout_constraintStart_toStartOf="@id/content_of_product"
+                    app:layout_constraintTop_toBottomOf="@+id/content_of_product" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/small"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/selectsize"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/small_text"
+                        style="@style/title_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/medium"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/selectsize"
+                    app:layout_constraintStart_toEndOf="@id/small">
+
+                    <TextView
+                        android:id="@+id/medium_text"
+                        style="@style/title_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/large"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/selectsize"
+                    app:layout_constraintStart_toEndOf="@id/medium">
+
+                    <TextView
+                        android:id="@+id/large_text"
+                        style="@style/title_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/xl"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/selectsize"
+                    app:layout_constraintStart_toEndOf="@id/large">
+
+                    <TextView
+                        android:id="@+id/xl_text"
+                        style="@style/title_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XL"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:padding="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buynow"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_btn"
+                    android:padding="10dp"
+                    android:text="Buy Now"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_to_cart" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

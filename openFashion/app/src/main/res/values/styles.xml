@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="title_24">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="title_36">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="sub_title_bold_12">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="sub_title_bold_18">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Bold_24">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sub_title_normal_18">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="sub_normal_bold_18">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="sub_title_bold_16">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="heading_italics_18">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="title_20">
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="internal_heading">
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
